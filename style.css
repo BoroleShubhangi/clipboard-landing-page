@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --strong-cyan-Active: hsl(171, 66%, 54%);
+  --light-blue-Active: hsl(233, 100%, 79%);
+}
+
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+header {
+  background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.hero_logo {
+  margin: 5% 0 3% 0;
+}
+
+h1 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px 410px;
+  margin-bottom: 45px;
+  font-size: 1.1rem;
+  opacity: 0.4;
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+a:hover{
+color: var(--strong-cyan-Active);
+}
+
+.btn {
+  height: 45px;
+  border-radius: 30px;
+  padding: 0 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.ios {
+  background-color: var(--strong-cyan);
+  box-shadow: 0px 3px 12px var(--Strong-Cyan);
+  border-bottom: 3px solid hsl(171, 66%, 34%);
+}
+
+.mac {
+  background-color: var(--light-blue);
+  border-bottom: 3px solid hsl(210, 10%, 33%);
+  box-shadow: 0px 3px 12px var(--light-Blue);
+}
+
+.ios:hover,
+.ios:active {
+  background-color: var(--strong-cyan-Active);
+}
+.mac:hover,
+.mac:active {
+  background-color: var(--light-blue-Active);
+}
+h2 {
+  padding: 5px;
+}
+
+.main_row {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.desktop {
+  position: relative;
+  left: -2%;
+  top: 5%;
+}
+
+.option_container {
+  margin-top: 5%;
+}
+
+.option {
+  padding: 20px;
+  width: 75%;
+  margin-left: 10%;
+}
+
+.option_title,
+.option_text {
+  padding: 5px;
+  margin: 0;
+}
+
+.access {
+  margin-top: 8%;
+}
+
+.devices {
+  margin-top: 3%;
+}
+
+.super_charge {
+  padding: 2% 0 1% 0;
+}
+
+.workflow_container {
+  display: flex;
+  padding: 0 6%;
+}
+
+.workflow {
+  padding: 0 20px;
+  width: 33%;
+}
+
+.workflow--text {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.workflow--icon {
+  padding: 50px;
+  width: 136px;
+}
+
+section {
+  padding: 5% 0 15% 0;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+footer {
+  background-color: hsl(0, 0%, 95%);
+    color: var(--grayish-blue);
+  text-align: left;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.nav_link {
+  margin-top: 0;
+}
+
+.footer_logo {
+  padding: 30px;
+}
+
+li {
+  list-style: none;
+  line-height: 50px;
+}
+
+.socials {
+  margin-top: 5%;
+  color: black;
+  font-size: 2rem;
+}
+
+.fab {
+  padding: 5px;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media(max-width:1204px){
+  h1 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  p {
+    padding: 10px 150px;
+    margin-bottom: 45px;
+  }
+  .desktop {
+    left: -5%;
+    width: 90%;
+  }
+
+  .devices {
+    width: 90%;
+  }
+  .option {
+    padding: 5px;
+    width: 100%;
+    margin-left: -5%;
+  }
+  
+}
+
+@media (max-width: 880px) {
+  body {
+    min-width: 375px;
+    overflow-x: hidden;
+  }
+
+  header {
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top left 50%;
+  }
+
+  h1 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  p {
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .ios {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+
+  .main_row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desktop {
+    left: 0;
+    width: 90%;
+  }
+
+  .devices {
+    width: 90%;
+  }
+
+  .workflow_container {
+    flex-direction: column;
+  }
+
+  .workflow {
+    width: 100%;
+  }
+
+  .clients {
+    flex-direction: column;
+  }
+
+  .clients img {
+    padding: 8%;
+  }
+
+  .footer_nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_logo {
+    position: relative;
+    left: 0;
+  }
+
+  .nav_link,
+  .socials {
+    width: 100%;
+  }
+}
